@@ -21,8 +21,8 @@ int main ()
   float class2[18];
   for (int i = 0; i < 18; i++)scanf("%f", &class1[i]);
   for (int i = 0; i < 18; i++)scanf("%f", &class2[i]);
-  qsort(class1, sizeof(class1)/sizeof(*class1), sizeof(*class1), []());
-  qsort(class2, sizeof(class2)/sizeof(*class2), sizeof(*class2));
+  qsort(class1, sizeof(class1)/sizeof(*class1), sizeof(*class1), comp);
+  qsort(class2, sizeof(class2)/sizeof(*class2), sizeof(*class2), comp);
   printf("%d", WichIsGreater(class1[2], class2[2]));
   return 0;
 }
